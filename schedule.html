@@ -9,7 +9,16 @@
     <!--<source src="js/script.js" defer>-->
 </head>
 <style>
-table,td,th {border: 1px solid black;}
+table,td,th {border: 1px solid black; border-collapse: collapse;}
+
+td{
+    background-color: #c166d4;}
+
+th {
+    background-color: gray;
+    color: pink;
+    font-size:large;
+}
 </style>
 <body>
     <table>
@@ -23,47 +32,45 @@ table,td,th {border: 1px solid black;}
         </tr>
         <tr>
             <th scope="row">First Hour</th>
-            <td scope="row">Digital Art</td>
-            <td scope="row">Digital Art</td>
-            <td colspan="1"><center>Advisory</center></td>
-            <td scope="row">Digital Art</td>
-            <td scope="row">Digital Art</td>
+            <td scope="row" colspan="5"><center>Digital Art I</center></td>
         </tr>
         <tr>
             <th scope="row">Second Hour</th>
-            <td scope="row">Computer Programming</th>
+            <td scope="row" colspan="2" rowspan="2"><center>Computer Programming</center></th>
+            <td scope="row"><center>Computer Programming</center></th>
+            <td scope="row" colspan="2" rowspan="2"><center>Computer Programming</center></th>
         </tr>
         <tr>
             <th scope="row">Advisory</th>
-            <th scope="row"></th>
+            <td scope="row"><center>Advisory</center></td>
         </tr>
         <tr>
             <th scope="row">Third Hour</th>
+            <td scope="row" colspan="5"><center>Algebra II</center></td>
         </tr>
         <tr>
              <th scope="row">Fourth Hour</th>
+             <td scope="row" colspan="5"><center>Web Design</center></td>
+        </tr>
+        <tr> 
+            <th scope="row">Lunch</th>
+            <td scope="row" colspan="5"><center>Italian House</center></td>
         </tr>
         <tr>
              <th scope="row">Fifth Hour</th>
+             <td scope="row" colspan="5"><center>Advanced Studio Drawing</center></td>
         </tr>
         <tr>
              <th scope="row">Sixth Hour</th>
+             <td scope="row" colspan="5"><center>Creative Writing</center></td>
         </tr>
         <tr>
             <th scope="row">Seventh Hour</th>
-            <th scope="row">Civil Engineering</th>
-            <th scope="row">Civil Engineering</th>
-            <th scope="row">Civil Engineering</th>
-            <th scope="row">Civil Engineering</th>
-            <th scope="row">Civil Engineering</th>
+            <td scope="row" colspan="5"><center>Civil Engineering</center></td>
         </tr>
         <tr>
              <th scope="row">Eigth Hour</th>
-             <th scope="row">Writing Through Film</th>
-             <th scope="row">Writing Through Film</th>
-             <th scope="row">Writing Through Film</th>
-             <th scope="row">Writing Through Film</th>
-             <th scope="row">Writing Through Film</th>
+             <td scope="row" colspan="5"><center>Writing Through Films</center></td>
         </tr>
         <tr></tr>
     </table>
