@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>Contact Me</title>
+    <!--<link rel="stylesheet" href="css/style.css">-->
+    <!--<source src="js/script.js" defer>-->
+</head>
+<style>
+    * {
+        font-size: 18px;
+        font-family:Verdana, Geneva, Tahoma
+    }
+    body{
+        background-color: gray;
+    }
+
+    #sbutton {
+        color: white;
+        background-color: blueviolet;
+        font-size: 24px;
+        border: 2px solid white;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    input{ width: 250px;}
+    textarea{width:250px;}
+    form{ background-color: #ccc;
+        padding: 15px;
+        
+    }
+</style>
+<body>
+    <h1>Contact Me</h1>
+    <form action="#" method="post" style="text-align: center;">
+        <label for="myname">Name: <label>
+        <input type="text" name="myname" id="myname" required/><br/><br/>
+        
+        <label for="subject">Subject: </label>
+        <input type="text" name="subject" id="subject" placeholder="CS 101" required/><br/><br/>
+
+        <textarea name="tbody" id="tbody" required>
+            Enter message...
+        </textarea><br/><br/>
+
+        <label form="attach">Attachments: </label>
+        <input type="file" name="attach" id="attach"/><br/><br/>
+
+        <input type="submit" value="Submit" id="sbutton"/>
+
+    </form>
+</body>
+</html>
