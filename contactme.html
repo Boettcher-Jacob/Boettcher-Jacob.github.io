@@ -11,10 +11,12 @@
 <style>
     * {
         font-size: 18px;
-        font-family:Verdana, Geneva, Tahoma
+        font-family: Verdana, Geneva, Tahoma;
+        max-width: 400px
     }
     body{
         background-color: gray;
+        text-align: center;
     }
 
     #sbutton {
@@ -25,31 +27,57 @@
         padding: 15px;
         border-radius: 10px;
     }
+    .rqd{
+        color: red;
+        font-weight: normal;
 
-    input{ width: 250px;}
-    textarea{width:250px;}
-    form{ background-color: #ccc;
-        padding: 15px;
+    }
+
+    input{ width: 250px;
+         text-align: center;
+        }
+        flyup{
+            alignment: center;
+        }
+    textarea{width:250px;
+             max-width:250px;
+             min-width: 250px;
+    }
+    form{ background-color: purple;
+        padding: 30px 15px;
         
+    }
+    label{
+        color: lime;
     }
 </style>
 <body>
     <h1>Contact Me</h1>
-    <form action="#" method="post" style="text-align: center;">
-        <label for="myname">Name: <label>
-        <input type="text" name="myname" id="myname" required/><br/><br/>
+    <form action="#" method="post" style="text-alignment: center;" onsubmit="alert('Not implemented yet');">
+        <label for="myname">Name: <span class="rqd">  </label><br/>
+        <input type="text" name="myname" id="myname" required><br/><br/>
         
-        <label for="subject">Subject: </label>
-        <input type="text" name="subject" id="subject" placeholder="CS 101" required/><br/><br/>
+        <label for="subject">Subject: </label><br/>
+        <input type="text" name="subject" id="subject" placeholder="CS 101" required><br/><br/>
 
-        <textarea name="tbody" id="tbody" required>
-            Enter message...
+        <textarea name="tbody" id="tbody" placeholder="Enter message..." required></textarea>
+            
         </textarea><br/><br/>
 
-        <label form="attach">Attachments: </label>
+        <label form="attach">Attachments: </label><br/>
         <input type="file" name="attach" id="attach"/><br/><br/>
 
-        <input type="submit" value="Submit" id="sbutton"/>
+        <input type="submit" value="Submit" id="sbutton"/><br/>
+    <label for="priority">Priority:</label><br/>
+    <select name="priority" id="priority" required>
+        <option disabled selected value>-- Select an option--</option>
+        <option value="low">Low</option>
+        <option value="med">Medium</option>
+        <option value="high">High</option>
+        <option value="crit">Critical</option>
+    </select>
+<input type="radio" name="flwup" id="flyup" value="yes"/>Yes
+<input type="radio" name="flwup" id="flyup" value="No"/>No
 
     </form>
 </body>
