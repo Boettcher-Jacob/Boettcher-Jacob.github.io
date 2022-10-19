@@ -35,20 +35,23 @@
 
     input{ width: 250px;
          text-align: center;
-        }
-        flyup{
-            alignment: center;
-        }
+    }
+
     textarea{width:250px;
              max-width:250px;
              min-width: 250px;
     }
     form{ background-color: purple;
         padding: 30px 15px;
-        
+
     }
+    
     label{
         color: lime;
+    }
+    #flwupy, #flwupn{
+        margin-left:-125px;
+        margin-right:-125px;
     }
 </style>
 <body>
@@ -67,7 +70,7 @@
         <label form="attach">Attachments: </label><br/>
         <input type="file" name="attach" id="attach"/><br/><br/>
 
-        <input type="submit" value="Submit" id="sbutton"/><br/>
+        
     <label for="priority">Priority:</label><br/>
     <select name="priority" id="priority" required>
         <option disabled selected value>-- Select an option--</option>
@@ -75,9 +78,15 @@
         <option value="med">Medium</option>
         <option value="high">High</option>
         <option value="crit">Critical</option>
-    </select>
-<input type="radio" name="flwup" id="flyup" value="yes"/>Yes
-<input type="radio" name="flwup" id="flyup" value="No"/>No
+    </select><br/>
+<label for="flwup">Do you want a follow-up email?</label><br/>
+<input type="radio" name="flwup" id="flwupy" value="yes"/>
+<label for="flwupy" class="flwlbl">Yes</label>
+<input type="radio" name="flwup" id="flwupn" value="No"/>
+<label for="flwupn" class="flwlbl">No</label>
+<br/><br/>
+
+<input type="submit" value="Submit" id="sbutton"/><br/>
 
     </form>
 </body>

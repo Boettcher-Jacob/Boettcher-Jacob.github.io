@@ -9,21 +9,23 @@
     <!--<source src="js/script.js" defer>-->
 </head>
 <style>
-    table,td,th {border: 1px solid black; border-collapse: collapse; font-family:Serif,Comic;}
+    *{
+        background-color: dark blue;
+    }
+    table,td,th {border: 1px solid black; border-collapse: collapse; font-family:Serif,Comic;
+    }
 
     #name{
         text-align:center;
     }
+
     #media{
         max-width:400px;
         max-height:300px;
     }
-    *{
-        background-image:"images/Background.jpg";
-    }
 </style>
 <body>
-    <h1 id="name">Jacob Boettcher</h2>
+    <h1 id="name">Jacob Boettcher</h1>
     <div>
         <table>
             <tr>
@@ -33,7 +35,7 @@
             </tr>
             <tr>
                 <td scope="row"><img src="images/Guitar.jfif" id=media></td>
-                <td scope="row"><video src="videos/mixkit-man-playing-guitar-in-the-dark-42845-medium.mp4" id=media></td></td>
+                <td scope="row"><video src="videos/mixkit-man-playing-guitar-in-the-dark-42845-medium.mp4" id=media></video></td>
                 <td scope="row"><audio src="audios/mixkit-cool-guitar-riff-2321.wav" id=media></td>
             </tr>
             <tr>
@@ -48,10 +50,10 @@
             </tr>
             <tr>
                 <td scope="row"><img src="images/Stock Snow.jfif" id=media></td>
-                <td scope="row"><video src="videos/CatSnow.mp4" id=media></td>
+                <td scope="row"><video src="videos/CatSnow.mp4" id=media></video></td>
                 <td scope="row"><audio src="audios/mixkit-forest-heavy-rain-loop-1226.wav"id=media></td>
             </tr>
-        <table>
+        </table>
     </div>
     Sources:
         <ul>
