@@ -1,0 +1,19 @@
+/*10/25/2022*/
+*{
+    font-family:"Freight Sans", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+    background-color:#edf0f5;
+}
+#first,#second{
+    width:100px;
+    margin: 5px;
+ }
+#email,#password{
+     width: 223px;
+      margin: 5px;
+ }
+button{
+    background-color:#659d50;
+    color:white;
+    font-size: 24px;
+    width: 320px;
+}
