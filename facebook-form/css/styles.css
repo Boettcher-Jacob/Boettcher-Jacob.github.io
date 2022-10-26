@@ -1,19 +1,27 @@
 /*10/25/2022*/
-*{
+body{
     font-family:"Freight Sans", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
     background-color:#edf0f5;
+    padding: 25%;
+    vertical-align:bottom;
 }
 #first,#second{
     width:100px;
     margin: 5px;
+    border-style:double;
  }
 #email,#password{
      width: 223px;
       margin: 5px;
+      border-style:double;
  }
 button{
     background-color:#659d50;
     color:white;
     font-size: 24px;
     width: 320px;
+    border-color:#659d50;
+    border-radius:5px;
+    border-width:5px;
+    
 }
